@@ -10,15 +10,14 @@ public class ClientTesting {
 
         Client client1 = new Client("Dan", "Prod", 500.4f);
 
-        assert(client1 == null);
-
+        System.out.println("ClientTest started..");
         if ( client1.think().equals("hello juicyworld ill use your song") ) {
-            System.out.println("test passed good");
+            System.out.println("test correct, method think() returns: "+ client1.think());
         } else System.err.println("error");
 
         if (client1.getName().isEmpty()) {
             System.err.println("Client has no name");
-        } else System.out.println("test passed good");
+        } else System.out.println("test correct method getName() works well and returns: "+client1.getName());
 
 
     }

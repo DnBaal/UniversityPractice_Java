@@ -7,13 +7,12 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
-
+        System.out.println("Enter name for the Person");
+        String name = in.nextLine();
         System.out.println("Enter age for the Person");
         int age = in.nextInt();
         System.out.println("Enter height for the Person");
-        float height = in.nextFloat();
-        System.out.println("Enter name for the Person");
-        String name = in.nextLine();
+        double height = in.nextDouble();
 
         Person gaben = new Person();
 
