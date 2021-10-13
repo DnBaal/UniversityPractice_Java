@@ -14,7 +14,6 @@ public class Recursion_3 {                                          // 7. Раз
         else if (3 >= sqrt(n) && n!=1) {System.out.println(n);}
         else {
             for (int i = 3; i <= sqrt(n); i += 2) {
-                System.out.println(" go ");
                 if (n % i == 0) {
                     System.out.println(i);
                     recursion(n / i);
